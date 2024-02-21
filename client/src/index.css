@@ -1,0 +1,1460 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Pridi:wght@300&family=Rajdhani:wght@300&family=Rampart+One&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a{
+  text-transform: none !important;
+  color: #000 !important;
+}
+.input-line, .input {
+  box-shadow: none !important;
+}
+.cardHeader {
+  width: 100%;
+}
+.cardBody {
+  width: 100%;
+}
+.topper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+@media (min-width: 1440px) {
+  .editCardHeader {
+    width: 400px;
+  }
+  .loginCard {
+    background-image: url('images/note.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+  #logintop {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px !important;
+    background: transparent;
+  }
+  .createCard {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    align-items:center;
+    justify-content: center;
+  }
+  .card {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    align-items:center;
+    justify-content: center;
+  }
+  .card-header {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 0 !important;
+    align-items:center !important;
+    justify-content: center;
+  }
+  .card-title {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px;
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+  }
+  .card-footer {
+    background-color: #D9D9D9 !important;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: right;
+  }
+  .card-content {
+    padding: 100px;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    /* height: 200px; */
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+    justify-content: center;
+  }
+  #navHeader {
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 20px;
+  }
+  .navbar-links {
+    display: flex;
+    font-family: 'Prata', serif;
+    list-style: none;
+    text-align: right;
+    margin-top: auto;
+  }
+  .navbar-link ,.navbar-logo {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000; 
+  }
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center !important;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-image: url('images/note.jpg');
+    background-size: cover;
+    color: #000000;
+    padding: 20px !important;
+  }
+  .date, .close {
+    text-align: right;
+    margin-left: auto;
+  }
+  .footer {
+    position:relative !important;
+    bottom: 0 !important;
+    width: 100%;
+    background-color: #D9D9D9;
+    font-family: 'Pridi', serif;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  .sicons{
+    text-align: right;
+  }
+  .copyright{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .Icons{
+    font-size: large;
+  }
+  .span {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .logo {
+    width: 80px;
+  }
+  .siteName {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+  }
+  .p {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .title, .herosect{
+    justify-content: center;
+    align-items: center;
+  }
+  .edit {
+    padding: auto;
+    color: #000;
+  }
+  .Page{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+    min-height: 50vw !important;
+  }
+  .pagediv{
+    background-color: rgba(255, 255, 255, 0.91);
+    background-size: cover;
+    background-position: center;
+    padding-left: 0px !important;
+    min-height: 50vw !important;
+  }
+  .Hero {
+    justify-content: space-between;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .home{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+  }
+  .heroImg {
+    width: 100%;
+  }
+  .hero-txt{
+    padding: 50px;
+    margin-right: 20px;
+  }
+  .hero-title {
+    font-family: 'Rampart One', cursive;
+    font-size: 120px;
+  }
+  .hero-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+  }
+  .input-line {
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    padding: 5rem;
+    border-radius: 0px;
+    font-family: 'Pridi', serif;
+    font-weight: lighter;
+  }
+  .Button {
+    font-family: 'Pridi', serif;
+    font-size: 24px;
+    color: #000000;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    justify-self: center;
+    padding-bottom: 30px !important;
+  
+  }
+  .SignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin: 0px !important;
+    min-height: 75vh;
+  }
+  .logText {
+    margin-top: 20px;
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .Container {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #Note-title {
+    border: none !important;
+    background:#D9D9D9 ;
+    font-family: 'Prata', serif;
+    font-weight:400 ;
+    color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 20px;
+    align-content: left !important;
+  }
+  #Note-directory {
+    box-shadow: none;
+  }
+  #Note-Content {
+    box-shadow: none;
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .Note-Content {
+    box-shadow: none;
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .createNote, .editNote {
+    font-family: 'Rampart One', cursive;
+    font-size: 64px;
+    justify-content: center;
+  }
+  .create-note {
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .input {
+    display: block;
+    width: 100% ;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  .input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .select {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 1em; /* Adjust the value as needed */
+  }
+  .select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.5em; /* Adjust the value as needed */
+    width: 0;
+    height: 0;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid #000; /* Adjust the color as needed */
+    transform: translateY(-50%);
+    pointer-events: none;
+  }  
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .editCardHeader {
+    width: 400px;
+  }
+  .loginCard {
+    background-image: url('images/note.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+  #logintop {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px !important;
+    background: transparent;
+  }
+  .createCard {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    align-items:center;
+    justify-content: center;
+  }
+  .card {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    align-items:center;
+    justify-content: center;
+  }
+  .card-header {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 0 !important;
+    align-items:center !important;
+    justify-content: center;
+  }
+  .card-title {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px;
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+  }
+  .card-footer {
+    background-color: #D9D9D9 !important;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: right;
+  }
+  .card-content {
+    padding: 100px;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    /* height: 200px; */
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+    justify-content: center;
+  }
+  #navHeader {
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 20px;
+  }
+  .navbar-links {
+    display: flex;
+    font-family: 'Prata', serif;
+    list-style: none;
+    text-align: right;
+    margin-top: auto;
+  }
+  .navbar-link ,.navbar-logo {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000; 
+  }
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center !important;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-image: url('images/note.jpg');
+    background-size: cover;
+    color: #000000;
+    padding: 20px !important;
+  }
+  .date, .close {
+    text-align: right;
+    margin-left: auto;
+  }
+  .footer {
+    position:relative !important;
+    bottom: 0 !important;
+    width: 100%;
+    background-color: #D9D9D9;
+    font-family: 'Pridi', serif;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  .sicons{
+    text-align: right;
+  }
+  .copyright{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .Icons{
+    font-size: large;
+  }
+  .span {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .logo {
+    width: 80px;
+  }
+  .siteName {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+  }
+  .p {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .title, .herosect{
+    justify-content: center;
+    align-items: center;
+  }
+  .edit {
+    padding: auto;
+    color: #000;
+  }
+  .Page{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+    min-height: 50vw !important;
+  }
+  .pagediv{
+    background-color: rgba(255, 255, 255, 0.91);
+    background-size: cover;
+    background-position: center;
+    padding-left: 0px !important;
+    min-height: 50vw !important;
+  }
+  .Hero {
+    justify-content: space-between;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .home{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+  }
+  .heroImg {
+    width: 100%;
+  }
+  .hero-txt{
+    padding: 50px;
+    margin-right: 20px;
+  }
+  .hero-title {
+    font-family: 'Rampart One', cursive;
+    font-size: 120px;
+  }
+  .hero-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+  }
+  .input-line {
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    padding: 5rem;
+    border-radius: 0px;
+    font-family: 'Pridi', serif;
+    font-weight: lighter;
+  }
+  .Button {
+    font-family: 'Pridi', serif;
+    font-size: 24px;
+    color: #000000;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    justify-self: center;
+    padding-bottom: 30px !important;
+  
+  }
+  .SignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin: 0px !important;
+    min-height: 75vh;
+  }
+  .logText {
+    margin-top: 20px;
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .Container {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #Note-title {
+    border: none !important;
+    background:#D9D9D9 ;
+    font-family: 'Prata', serif;
+    font-weight:400 ;
+    color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 20px;
+    align-content: left !important;
+  }
+  #Note-directory {
+    box-shadow: none;
+  }
+  #Note-Content {
+    box-shadow: none;
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .Note-Content {
+    box-shadow: none;
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .createNote, .editNote {
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    justify-content: center;
+  }
+  .create-note {
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .input {
+    display: block;
+    width: 100% ;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  .input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .select {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 1em; /* Adjust the value as needed */
+  }
+  .select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.5em; /* Adjust the value as needed */
+    width: 0;
+    height: 0;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid #000; /* Adjust the color as needed */
+    transform: translateY(-50%);
+    pointer-events: none;
+  }  
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .editCardHeader {
+    width: 400px;
+  }
+  .loginCard {
+    background-image: url('images/note.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+  #logintop {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px !important;
+    background: transparent;
+  }
+  .createCard {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    align-items:center;
+    justify-content: center;
+  }
+  .card {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    align-items:center;
+    justify-content: center;
+  }
+  .card-header {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 0 !important;
+    align-items:center !important;
+    justify-content: center;
+  }
+  .card-title {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px;
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+  }
+  .card-footer {
+    background-color: #D9D9D9 !important;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: right;
+  }
+  .card-content {
+    padding: 100px;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    /* height: 200px; */
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+    justify-content: center;
+  }
+  #navHeader {
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 20px;
+  }
+  .navbar-links {
+    display: flex;
+    font-family: 'Prata', serif;
+    list-style: none;
+    text-align: right;
+    margin-top: auto;
+  }
+  .navbar-link ,.navbar-logo {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000; 
+  }
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center !important;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-image: url('images/note.jpg');
+    background-size: cover;
+    color: #000000;
+    padding: 20px !important;
+  }
+  .date, .close {
+    text-align: right;
+    margin-left: auto;
+  }
+  .footer {
+    position:relative !important;
+    bottom: 0 !important;
+    width: 100%;
+    background-color: #D9D9D9;
+    font-family: 'Pridi', serif;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  .sicons{
+    text-align: right;
+  }
+  .copyright{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .Icons{
+    font-size: large;
+  }
+  .span {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .logo {
+    width: 80px;
+  }
+  .siteName {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+  }
+  .p {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .title, .herosect{
+    justify-content: center;
+    align-items: center;
+  }
+  .edit {
+    padding: auto;
+    color: #000;
+  }
+  .Page{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+    min-height: 50vw !important;
+  }
+  .pagediv{
+    background-color: rgba(255, 255, 255, 0.91);
+    background-size: cover;
+    background-position: center;
+    padding-left: 0px !important;
+    min-height: 50vw !important;
+  }
+  .Hero {
+    justify-content: space-between;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .home{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+  }
+  .heroImg {
+    width: 100%;
+  }
+  .hero-txt{
+    padding: 0px;
+    margin-right: 20px;
+  }
+  .hero-title {
+    font-family: 'Rampart One', cursive;
+    font-size: 100px;
+  }
+  .hero-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+  }
+  .input-line {
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    padding: 5rem;
+    border-radius: 0px;
+    font-family: 'Pridi', serif;
+    font-weight: lighter;
+  }
+  .Button {
+    font-family: 'Pridi', serif;
+    font-size: 24px;
+    color: #000000;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    justify-self: center;
+    padding-bottom: 30px !important;
+  
+  }
+  .SignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin: 0px !important;
+    min-height: 75vh;
+  }
+  .logText {
+    margin-top: 20px;
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .Container {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #Note-title {
+    border: none !important;
+    background:#D9D9D9 ;
+    font-family: 'Prata', serif;
+    font-weight:400 ;
+    color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 20px;
+    align-content: left !important;
+  }
+  #Note-directory {
+    box-shadow: none;
+  }
+  #Note-Content {
+    box-shadow: none;
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .Note-Content {
+    box-shadow: none;
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .createNote, .editNote {
+    font-family: 'Rampart One', cursive;
+    font-size: 40px;
+    justify-content: center;
+  }
+  .create-note {
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .input {
+    display: block;
+    width: 100% ;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  .input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .select {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 1em; /* Adjust the value as needed */
+  }
+  .select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.5em; /* Adjust the value as needed */
+    width: 0;
+    height: 0;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid #000; /* Adjust the color as needed */
+    transform: translateY(-50%);
+    pointer-events: none;
+  }  
+}
+@media (max-width: 767px) {
+  .responsive-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .homeRow {
+    width: 100%;
+  }
+  .loginCard {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: fit-content !important;
+    height: fit-content;
+    padding: 25px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+  #logintop {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px !important;
+    background: transparent;
+  }
+  .createCard {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    min-height: 250px;
+    align-items:center;
+    justify-content: center;
+  }
+  .card {
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    align-items:center;
+    justify-content: center;
+  }
+  .card-header {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 0 !important;
+    align-items:center !important;
+    justify-content: center;
+  }
+  .card-title {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    font-weight:400 ;
+    padding-top: 30px;
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+  }
+  .card-footer {
+    background-color: #D9D9D9 !important;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: right;
+  }
+  .card-content {
+    padding: 100px;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    /* height: 200px; */
+    overflow: auto;
+    writing-mode: horizontal-tb !important;
+    justify-content: center;
+  }
+  #navHeader {
+    background-color: #D9D9D9;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 20px;
+  }
+  .navbar-links {
+    display: flex;
+    font-family: 'Prata', serif;
+    list-style: none;
+    text-align: right;
+    margin-top: auto;
+  }
+  .navbar-link ,.navbar-logo {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000; 
+  }
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center !important;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-image: url('images/note.jpg');
+    background-size: cover;
+    color: #000000;
+    padding: 20px !important;
+  }
+  .date, .close {
+    text-align: right;
+    margin-left: auto;
+  }
+  .footer {
+    position:relative !important;
+    bottom: 0 !important;
+    width: 100%;
+    background-color: #D9D9D9;
+    font-family: 'Pridi', serif;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  .sicons{
+    text-align: right;
+  }
+  .copyright{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .Icons{
+    font-size: large;
+  }
+  .span {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .logo {
+    width: 80px;
+  }
+  .siteName {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+  }
+  .p {
+    font-family: 'Pridi', serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .title, .herosect{
+    justify-content: center;
+    align-items: center;
+  }
+  .edit {
+    padding: auto;
+    color: #000;
+  }
+  .Page{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+    min-height: 50vw !important;
+  }
+  .pagediv{
+    background-color: rgba(255, 255, 255, 0.91);
+    background-size: cover;
+    background-position: center;
+    padding-left: 0px !important;
+    min-height: 50vw !important;
+  }
+  .Hero {
+    justify-content: space-between;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .home{
+    background-image: url('images/doodles.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px !important;
+    flex-grow: 1;
+  }
+  .heroImg {
+    width: 100%;
+    padding: 25px;
+  }
+  .hero-txt{
+    padding: 10px;
+    margin-right: 0px;
+  }
+  .hero-title {
+    font-family: 'Rampart One', cursive;
+    font-size: 75px;
+  }
+  .hero-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+  }
+  .input-line {
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    background-image: url('images/note.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    padding: 5rem;
+    border-radius: 0px;
+    font-family: 'Pridi', serif;
+    font-size: 12px !important;
+    font-weight: lighter;
+  }
+  .Button {
+    font-family: 'Pridi', serif;
+    font-size: 24px;
+    color: #000000;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    justify-self: center;
+    padding-bottom: 30px !important;
+  
+  }
+  .SignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin: 0px !important;
+    min-height: 75vh;
+  }
+  .logText {
+    margin-top: 20px;
+    font-family: 'Pridi', serif;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  .Container {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #Note-title {
+    border: none !important;
+    background:#D9D9D9 ;
+    box-shadow: none;
+    font-family: 'Prata', serif;
+    font-weight:400 ;
+    color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 20px;
+    align-content: left !important;
+  }
+  #Note-directory {
+    box-shadow: none;
+  }
+  #Note-Content {
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .Note-Content {
+    min-height: 150px;
+    align-content: start;
+    display: block;
+    width: 100% !important;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none !important;
+    background: transparent;
+    align-content: left !important;
+  }
+  .createNote, .editNote {
+    font-family: 'Rampart One', cursive;
+    font-size: 30px;
+    justify-content: center;
+  }
+  .create-note {
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .input {
+    display: block;
+    width: 100% ;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  .input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .select {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 1em; /* Adjust the value as needed */
+  }
+  .select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.5em; /* Adjust the value as needed */
+    width: 0;
+    height: 0;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid #000; /* Adjust the color as needed */
+    transform: translateY(-50%);
+    pointer-events: none;
+  }  
+}
