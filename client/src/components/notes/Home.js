@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {format} from 'timeago.js'
 import axios from 'axios'
 import Hero from '../Hero'
@@ -10,8 +10,7 @@ import { RiDeleteBin2Fill } from "react-icons/ri";
 export default function Home(){
     const [notes, setNotes] = useState([])
     const [token, setToken] = useState('')
-    // const [directories, setDirectories] = useState([]);
-
+    const navigate = useNavigate();
 
     const getNotes = async (token) =>{
         const res = await axios.get('api/notes', {
@@ -36,9 +35,10 @@ export default function Home(){
                     headers: {Authorization: token}
                 })
                 getNotes(token)
+                navigate('/')
             }
         } catch (error) {
-            window.location.href = "/";
+            console.log(error)
         }
     }
 

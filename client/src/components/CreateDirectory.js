@@ -38,7 +38,6 @@ export default function CreateDirectory() {
             }
         } catch (err) {
             console.log(err);
-            // window.location.href = "/";
         }
     }
 

@@ -35,7 +35,6 @@ export default function DirectoryModal({setShow, show}) {
             }
         } catch (err) {
             console.log(err);
-            // window.location.href = "/";
         }
     }
 

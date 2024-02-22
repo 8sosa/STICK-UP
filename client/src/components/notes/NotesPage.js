@@ -44,7 +44,7 @@ export default function NotesPage() {
         await axios.delete(`api/notes/${id}`, {
           headers: { Authorization: token },
         });
-        navigate('/notes')
+        navigate(`/dirnotes/${directory_id}`)
       }
     } catch (error) {
       console.log(error)
