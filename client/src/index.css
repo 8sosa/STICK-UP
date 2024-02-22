@@ -149,9 +149,9 @@ a{
   }
   
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
+    display: flex !important;
+    justify-content: space-between !important;
+    height: fit-content !important;
     background-image: url('images/note.jpg');
     background-size: cover;
     color: #000000;
@@ -504,9 +504,9 @@ a{
   }
   
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
+    display: flex !important;
+    justify-content: space-between !important;
+    height: fit-content !important;
     background-image: url('images/note.jpg');
     background-size: cover;
     color: #000000;
@@ -859,9 +859,9 @@ a{
   }
   
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
+    display: flex !important;
+    justify-content: space-between !important;
+    height: fit-content !important;
     background-image: url('images/note.jpg');
     background-size: cover;
     color: #000000;
@@ -1218,9 +1218,9 @@ a{
   }
   
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
+    display: flex !important;
+    justify-content: space-between !important;
+    height: fit-content !important;
     background-image: url('images/note.jpg');
     background-size: cover;
     color: #000000;

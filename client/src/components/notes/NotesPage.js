@@ -6,6 +6,7 @@ import { Container, Row, Card, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import checkLogin from './auth';
 import { RiDeleteBin2Fill } from "react-icons/ri";
+import { IoAdd } from "react-icons/io5";
 
 
 export default function NotesPage() {
@@ -84,6 +85,12 @@ export default function NotesPage() {
             <Button variant='outline-secondary' onClick={() => deleteFolder(directory_id)}><RiDeleteBin2Fill /></Button>
           </div>
           <Row>
+            <Col>
+              <Card onClick={() => navigate('/create')}>
+                <IoAdd />
+                <p>Create Note</p>
+              </Card>
+            </Col>
             {notes.map((note) => (
               <Col className='mb-5 mt-5 d-flex justify-content-center align-items-center' key={note._id}>
                 <Card>
