@@ -6,6 +6,7 @@ import DirectoryModal from '../DirectoryModal';
 
 export default function CreateNote() {
     const [note, setNote] = useState({title: '',content: '',directory: '',date: ''})
+    const [txt, setTxt] = useState('')
     const [directories, setDirectories] = useState([]);
     const [show, setShow] = useState(false)
 
@@ -32,10 +33,11 @@ export default function CreateNote() {
                 const newNote = {
                     title, content, directory, date
                 }
-                await axios.post('/api/notes', newNote, {
+                const res = await axios.post('/api/notes', newNote, {
                     headers: {Authorization: token}
                 })
-                return navigate.push('/notes')
+                setTxt(res.data.msg)
+                navigate('/notes')
             }
         } catch (err) {
             console.error(err);
@@ -110,7 +112,8 @@ export default function CreateNote() {
                             required 
                             onChange={onChangeInput} />
                         </Form.Group>     
-                    </Card.Footer>          
+                    </Card.Footer>   
+                    <p>{txt}</p>       
                 </Card>
                 <div className='text-center mb-5 mt-4'>
                     <Button variant="outline-secondary" type='submit' > Stick! </Button>
