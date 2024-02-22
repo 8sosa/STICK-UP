@@ -44,9 +44,10 @@ export default function NotesPage() {
         await axios.delete(`api/notes/${id}`, {
           headers: { Authorization: token },
         });
+        navigate('/notes')
       }
     } catch (error) {
-      window.location.href = '/';
+      console.log(error)
     }
   };
   const deleteFolder = async (id) => {
