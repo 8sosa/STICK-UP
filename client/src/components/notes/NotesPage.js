@@ -85,7 +85,7 @@ export default function NotesPage() {
             <Button variant='outline-secondary' onClick={() => deleteFolder(directory_id)}><RiDeleteBin2Fill /></Button>
           </div>
           <Row>
-            <Col>
+            <Col className='mb-5 mt-5 d-flex justify-content-center align-items-center'>
               <Card onClick={() => navigate('/create')}>
                 <IoAdd />
                 <p>Create Note</p>
