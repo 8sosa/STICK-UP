@@ -113,8 +113,8 @@ export default function CreateNote() {
                             onChange={onChangeInput} />
                         </Form.Group>     
                     </Card.Footer>   
-                    <p>{txt}</p>       
                 </Card>
+                <p>{txt}</p>       
                 <div className='text-center mb-5 mt-4'>
                     <Button variant="outline-secondary" type='submit' > Stick! </Button>
                 </div>

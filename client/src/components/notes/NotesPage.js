@@ -12,6 +12,7 @@ import { IoAdd } from "react-icons/io5";
 export default function NotesPage() {
   const params = useParams();
   const directory_id = params.directory;
+  const [txt, setTxt] = useState('')
   const [notes, setNotes] = useState([]);
   const [directoryName, setDirectoryName] = useState('');
   const navigate = useNavigate();
@@ -41,9 +42,10 @@ export default function NotesPage() {
   const deleteNote = async (id) => {
     try {
       if (token) {
-        await axios.delete(`api/notes/${id}`, {
+        const res = await axios.delete(`api/notes/${id}`, {
           headers: { Authorization: token },
         });
+        setTxt(res.data.msg)
         navigate(`/dirnotes/${directory_id}`)
       }
     } catch (error) {
@@ -75,7 +77,7 @@ export default function NotesPage() {
     }
     
     fetchData();
-  }, [directory_id]);
+  }, [directory_id, notes]);
 
   return (
     <>
@@ -85,6 +87,7 @@ export default function NotesPage() {
             <h2 className='createNote d-flex justify-content-center align-items-center pt-3'>{directoryName}</h2>
             <Button variant='outline-secondary' onClick={() => deleteFolder(directory_id)}><RiDeleteBin2Fill /></Button>
           </div>
+          <p>{txt}</p>
           <Row>
             <Col className='mb-5 mt-5 d-flex justify-content-center align-items-center'>
               <Card onClick={() => navigate('/create')}>
