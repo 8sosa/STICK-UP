@@ -46,6 +46,7 @@ export default function NotesPage() {
           headers: { Authorization: token },
         });
         setTxt(res.data.msg)
+        getDirectoryNotes(token)
         navigate(`/dirnotes/${directory_id}`)
       }
     } catch (error) {
@@ -95,17 +96,13 @@ export default function NotesPage() {
                 <p>Create Note</p>
               </Card>
             </Col>
-            {notes.map((note) => (
+            {notes.map(note => (
               <Col className='mb-5 mt-5 d-flex justify-content-center align-items-center' key={note._id}>
                 <Card>
                   <Card.Header>
                     <ul id='navHeader'>
                       <li className='title'><span title={note.title}>{note.title}</span></li>
-                      <li className='close'>
-                        <Button variant='outline-secondary' onClick={() => deleteNote(note._id)}>
-                          <RiDeleteBin2Fill />
-                        </Button>
-                      </li>
+                      <li className='close'><Button variant='outline-secondary' onClick={() => deleteNote(note._id)}><RiDeleteBin2Fill /></Button></li>
                     </ul>
                   </Card.Header>
                   <Card.Body className='cardBody'>
